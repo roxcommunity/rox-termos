@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Regras oficiais da Rox Community: comunidade, compras, apoiadores e suporte." />
+  <meta name="theme-color" content="#050505" />
+  <meta property="og:title" content="Rox Community — Documentação" />
+  <meta property="og:description" content="Regras, compras, apoiadores e suporte oficial da Rox Community." />
+  <meta property="og:type" content="website" />
+  <title>Rox Community — Regras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20260812134111" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="topbar">
+    <a class="brand pressable" href="#boas-vindas" aria-label="Rox Community — início">
+      <span class="brand-mark">R</span>
+      <span class="brand-copy"><strong>Rox Community</strong><small>Regras oficiais</small></span>
+    </a>
+
+    <button class="search-trigger pressable" id="searchTrigger" type="button" aria-label="Pesquisar documentação">
+      <span class="search-icon">🔍</span>
+      <span class="search-label">Buscar na documentação...</span>
+      <kbd>Ctrl K</kbd>
+    </button>
+
+    <div class="top-actions">
+      <div class="live-clock" aria-label="Data e hora atual"><span class="live-dot"></span><span id="topLiveClock">--/--/---- · --:--:--</span></div>
+      <a class="top-action pressable" href="https://discord.gg/byhQgvYPjH" target="_blank" rel="noopener noreferrer"><span class="top-action-icon">💬</span> Discord</a>
+      <a class="top-action pressable" href="#boas-vindas"><span class="top-action-icon">🏠</span> Início</a>
+      <button class="mobile-menu pressable" id="mobileMenu" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-scroll">
+      <nav id="sideNav" aria-label="Navegação principal"></nav>
+      <div class="support-card">
+        <span class="support-kicker">SUPORTE</span>
+        <strong>Dúvidas? Entre no nosso Discord</strong>
+        <a class="support-button pressable" href="https://discord.gg/byhQgvYPjH" target="_blank" rel="noopener noreferrer">💬 Acessar Discord</a>
+      </div>
+    </div>
+  </aside>
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <main class="content" id="content" tabindex="-1"></main>
+
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="Pesquisar documentação">
+      <div class="search-input-wrap">
+        <span>🔍</span>
+        <input id="searchInput" type="search" placeholder="Pesquisar regras, compras, apoiadores..." autocomplete="off" />
+        <button id="searchClose" class="pressable" type="button">ESC</button>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+      <div class="search-help"><span>↑↓ navegar</span><span>↵ abrir</span><span>ESC fechar</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✅</span><b id="toastText">Link copiado</b></div>
+  <script src="assets/app.js?v=20260812134111"></script>
+</body>
+</html>
